@@ -1,0 +1,19 @@
+[gd_scene load_steps=2 format=3 uid="uid://de2vc65iwrpgy"]
+
+[ext_resource type="Script" path="res://Camera.gd" id="1_x2coa"]
+
+[node name="UI" type="CanvasLayer"]
+
+[node name="Camera" type="Camera2D" parent="."]
+script = ExtResource("1_x2coa")
+
+[node name="Panel" type="Panel" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 3.0
+offset_top = 14.0
+offset_right = 18.0
+offset_bottom = 6.0
+grow_horizontal = 2
+grow_vertical = 2
