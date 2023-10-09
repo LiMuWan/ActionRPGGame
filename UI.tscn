@@ -1,6 +1,19 @@
-[gd_scene load_steps=2 format=3 uid="uid://de2vc65iwrpgy"]
+[gd_scene load_steps=3 format=3 uid="uid://de2vc65iwrpgy"]
 
 [ext_resource type="Script" path="res://Camera.gd" id="1_x2coa"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_hk8vg"]
+bg_color = Color(0.635294, 0.615686, 0.333333, 0.501961)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(0.211765, 0.894118, 0.984314, 1)
+border_blend = true
+corner_radius_top_left = 2
+corner_radius_top_right = 2
+corner_radius_bottom_right = 2
+corner_radius_bottom_left = 2
 
 [node name="UI" type="CanvasLayer"]
 
@@ -8,12 +21,4 @@
 script = ExtResource("1_x2coa")
 
 [node name="Panel" type="Panel" parent="."]
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = 3.0
-offset_top = 14.0
-offset_right = 18.0
-offset_bottom = 6.0
-grow_horizontal = 2
-grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_hk8vg")
